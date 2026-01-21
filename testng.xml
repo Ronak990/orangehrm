@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite" parallel="methods" thread-count="2">
-    <test name = "test1">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="listeners.CustomListners">
+
+        </listener>
+    </listeners>
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/Ronak.Oza/IdeaProjects/OrangeHRMProject/src/test/java/listeners/ListenersTest.java">
         <classes>
-            <class name="ParallelTesting.ParallelTest1">
+            <class name="listeners.ListenersTest">
 
             </class>
         </classes>
